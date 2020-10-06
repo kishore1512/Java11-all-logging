@@ -1,1 +1,1 @@
-web:java -jar target/sample-app-1.0-jar-with-dependencies.jar   -javaagent:/opt/newrelic/newrelic.jar 
+web:java -Djava.io.tmpdir=/home/webapp/tmpdir -javaagent:newrelic/newrelic.jar  -jar target/sample-app-1.0-jar-with-dependencies.jar   
