@@ -1,1 +1,1 @@
-web:java -Djava.io.tmpdir=/home/webapp/tmpdir -javaagent:newrelic/newrelic.jar  -jar target/sample-app-1.0-jar-with-dependencies.jar   
+web:java -Djava.io.tmpdir=/home/webapp/tmpdir -javaagent:newrelic/newrelic.jar  -jar target/sample-app-1.0-jar-with-dependencies.jar   -javaagent:/var/app/current/dd-java-agent.jar -Ddd.profiling.enabled=true -Ddd.logs.injection=true -Ddd.service=test -Ddd.env=stage 
